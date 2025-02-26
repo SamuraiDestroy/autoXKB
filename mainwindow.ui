@@ -23,8 +23,99 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew_Ctrl_N">
+     <property name="title">
+      <string>New (Ctrl + N)</string>
+     </property>
+     <addaction name="actionKeyboard_Layout"/>
+     <addaction name="actionKeyboard_Geometry"/>
+    </widget>
+    <widget class="QMenu" name="menuInstall_Ctrl_Shift_I">
+     <property name="title">
+      <string>Install (Ctrl + Shift + I)</string>
+     </property>
+     <addaction name="actionKeyboard_Layout_2"/>
+     <addaction name="actionKeyboard_Geometry_2"/>
+    </widget>
+    <addaction name="menuNew_Ctrl_N"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionOpen_Recent"/>
+    <addaction name="separator"/>
+    <addaction name="menuInstall_Ctrl_Shift_I"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+    <addaction name="actionAppearance"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFIle">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As (Ctrl + Shift + S)</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save (Ctrl + S)</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open (Ctrl + O)</string>
+   </property>
+  </action>
+  <action name="actionKeyboard_Layout">
+   <property name="text">
+    <string>Keyboard Layout</string>
+   </property>
+  </action>
+  <action name="actionKeyboard_Geometry">
+   <property name="text">
+    <string>Keyboard Geometry</string>
+   </property>
+  </action>
+  <action name="actionOpen_Recent">
+   <property name="text">
+    <string>Open Recent..</string>
+   </property>
+  </action>
+  <action name="actionAppearance">
+   <property name="text">
+    <string>Appearance</string>
+   </property>
+  </action>
+  <action name="actionKeyboard_Layout_2">
+   <property name="text">
+    <string>Keyboard Layout</string>
+   </property>
+  </action>
+  <action name="actionKeyboard_Geometry_2">
+   <property name="text">
+    <string>Keyboard Geometry</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
