@@ -27,21 +27,19 @@
     <property name="title">
      <string>File</string>
     </property>
-    <widget class="QMenu" name="menuNew_Ctrl_N">
+    <widget class="QMenu" name="actionNew_Ctrl_N">
      <property name="title">
       <string>New (Ctrl + N)</string>
      </property>
-     <addaction name="actionKeyboard_Layout"/>
-     <addaction name="actionKeyboard_Geometry"/>
     </widget>
     <widget class="QMenu" name="menuInstall_Ctrl_Shift_I">
      <property name="title">
-      <string>Install (Ctrl + Shift + I)</string>
+      <string>Install..</string>
      </property>
      <addaction name="actionKeyboard_Layout_2"/>
      <addaction name="actionKeyboard_Geometry_2"/>
     </widget>
-    <addaction name="menuNew_Ctrl_N"/>
+    <addaction name="actionNew_Ctrl_N"/>
     <addaction name="actionSave_As"/>
     <addaction name="actionSave"/>
     <addaction name="separator"/>
@@ -54,12 +52,19 @@
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionUI_Guide"/>
+    <addaction name="separator"/>
+    <addaction name="actionReport_an_Issue"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
    </widget>
    <widget class="QMenu" name="menuWindow">
     <property name="title">
      <string>Window</string>
     </property>
     <addaction name="actionAppearance"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_Inputs"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuWindow"/>
@@ -75,15 +80,24 @@
    <property name="text">
     <string>Save As (Ctrl + Shift + S)</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
   </action>
   <action name="actionSave">
    <property name="text">
     <string>Save (Ctrl + S)</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
   <action name="actionOpen">
    <property name="text">
     <string>Open (Ctrl + O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionKeyboard_Layout">
@@ -114,6 +128,26 @@
   <action name="actionKeyboard_Geometry_2">
    <property name="text">
     <string>Keyboard Geometry</string>
+   </property>
+  </action>
+  <action name="actionShow_Inputs">
+   <property name="text">
+    <string>Show Inputs</string>
+   </property>
+  </action>
+  <action name="actionUI_Guide">
+   <property name="text">
+    <string>UI Guide</string>
+   </property>
+  </action>
+  <action name="actionReport_an_Issue">
+   <property name="text">
+    <string>Report an Issue</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>
