@@ -27,11 +27,6 @@
     <property name="title">
      <string>File</string>
     </property>
-    <widget class="QMenu" name="actionNew_Ctrl_N">
-     <property name="title">
-      <string>New (Ctrl + N)</string>
-     </property>
-    </widget>
     <widget class="QMenu" name="menuInstall_Ctrl_Shift_I">
      <property name="title">
       <string>Install..</string>
@@ -39,7 +34,8 @@
      <addaction name="actionKeyboard_Layout_2"/>
      <addaction name="actionKeyboard_Geometry_2"/>
     </widget>
-    <addaction name="actionNew_Ctrl_N"/>
+    <addaction name="actionNew_Ctrl_N_2"/>
+    <addaction name="separator"/>
     <addaction name="actionSave_As"/>
     <addaction name="actionSave"/>
     <addaction name="separator"/>
@@ -100,16 +96,6 @@
     <string>Ctrl+O</string>
    </property>
   </action>
-  <action name="actionKeyboard_Layout">
-   <property name="text">
-    <string>Keyboard Layout</string>
-   </property>
-  </action>
-  <action name="actionKeyboard_Geometry">
-   <property name="text">
-    <string>Keyboard Geometry</string>
-   </property>
-  </action>
   <action name="actionOpen_Recent">
    <property name="text">
     <string>Open Recent..</string>
@@ -148,6 +134,11 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionNew_Ctrl_N_2">
+   <property name="text">
+    <string>New (Ctrl + N)</string>
    </property>
   </action>
  </widget>
